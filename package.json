@@ -13,34 +13,28 @@
     "url": "git+ssh://git@github.com/Kcepriu/telegram-bot-strapi.git"
   },
   "dependencies": {
-    "@strapi/design-system": "^1.6.3",
-    "@strapi/helper-plugin": "^4.6.0",
-    "@strapi/icons": "^1.6.3",
-    "node-telegram-bot-api": "^0.61.0",
+    "@strapi/design-system": "^1.19.0",
+    "@strapi/helper-plugin": "^4.25.12",
+    "@strapi/icons": "^1.19.0",
+    "node-telegram-bot-api": "^0.66.0",
     "prop-types": "^15.7.2",
-    "react-icons": "^4.10.1",
-    "uuid": "^9.0.0"
+    "react-icons": "^5.5.0",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
-    "@strapi/typescript-utils": "^4.6.0",
-    "@types/node-telegram-bot-api": "^0.61.7",
-    "@types/react": "^17.0.53",
-    "@types/react-dom": "^18.0.28",
+    "@strapi/types": "^5.16.1",
+    "@strapi/typescript-utils": "^5.16.1",
+    "@types/node-telegram-bot-api": "^0.64.9",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.26",
-    "@types/uuid": "^9.0.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^5.3.4",
-    "styled-components": "^5.3.6",
-    "typescript": "5.0.4"
-  },
-  "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0",
-    "react-router-dom": "^5.3.4",
-    "styled-components": "^5.3.6",
-    "@strapi/strapi": "^4.0.0"
+    "@types/uuid": "^10.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.3",
+    "styled-components": "^6.1.19",
+    "typescript": "5.8.3"
   },
   "resolutions": {
     "yargs": "^17.2.1"

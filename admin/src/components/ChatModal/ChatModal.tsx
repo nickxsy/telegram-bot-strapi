@@ -19,7 +19,7 @@ interface IProps {
 const ChatModal: FC<IProps> = ({ setShowModal, addNewChat }) => {
   const [name, setName] = useState<string>("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     // Prevent submitting parent form
     e.preventDefault();
     e.stopPropagation();
@@ -62,7 +62,9 @@ const ChatModal: FC<IProps> = ({ setShowModal, addNewChat }) => {
           name="text"
           hint="Max 40 characters"
           error={getError()}
-          onChange={(e) => setName(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setName(e.target.value)
+          }
           value={name}
         />
       </ModalBody>

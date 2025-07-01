@@ -1,4 +1,4 @@
-import { Strapi } from "@strapi/strapi";
+import { Strapi } from "@strapi/types/dist/core";
 
 export default ({ strapi }: { strapi: Strapi }) => ({
   async sendMessageToAdmins(ctx) {

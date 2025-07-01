@@ -1,4 +1,4 @@
-import { Strapi } from "@strapi/strapi";
+import { Strapi } from "@strapi/types/dist/core";
 import botServices from "./bot/bot.services";
 
 export default async ({ strapi }: { strapi: Strapi }) => {

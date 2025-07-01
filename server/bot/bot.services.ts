@@ -1,11 +1,14 @@
-import { Strapi } from "@strapi/strapi";
+import { Strapi } from "@strapi/types/dist/core";
 import { env } from "@strapi/utils";
 import TelegramBot, { Message } from "node-telegram-bot-api";
 
 class Bot {
   private bot: TelegramBot | null;
 
-  constructor(private strapi: Strapi, private token: string) {
+  constructor(
+    private strapi: Strapi,
+    private token: string
+  ) {
     this.bot = this.token
       ? new TelegramBot(this.token, {
           polling: { autoStart: true, params: { timeout: 30 } },

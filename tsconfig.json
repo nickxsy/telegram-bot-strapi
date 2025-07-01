@@ -2,7 +2,8 @@
   "extends": "@strapi/typescript-utils/tsconfigs/admin",
 
   "compilerOptions": {
-    "target": "ESNext",    
+    "target": "ESNext",
+    "types": ["@strapi/types"],
     "strict": true
   },
 
